@@ -1,0 +1,1 @@
+console.log("class kinni boring a, bhukh v lg gi hun ta neend v aundi a");
