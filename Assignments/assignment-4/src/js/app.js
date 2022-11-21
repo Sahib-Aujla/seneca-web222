@@ -31,28 +31,59 @@ function main() {
   }
 }
 
+function consoleItem() {
+  let rows = document.querySelectorAll(".cols");
+  for (let i = 0; i < rows.length; i++) {
+    rows[i].addEventListener("click", (prod) => {
+      let currId = prod.target.parentElement.id;
+
+      let filteredeItem = products.filter((prods) => {
+        return prods.id === currId;
+      });
+      console.log(filteredeItem[0]);
+    });
+  }
+}
+
 function CreateRow(prod) {
   let row = document.createElement("tr");
+  row.setAttribute("class", "row");
+  row.setAttribute("id", prod.id);
+
   const dollars = (prod.price / 100).toLocaleString("en-US", {
     style: "currency",
     currency: "CAD"
   });
-  let str = `<td>${prod.name}</td><td>${prod.description}</td><td>${dollars}</td>`;
 
-  row.innerHTML = str;
+  let nameCol = document.createElement("td");
+  nameCol.setAttribute("class", "cols");
+  nameCol.innerText = prod.name;
+  let descCol = document.createElement("td");
+  descCol.setAttribute("class", "cols");
+  descCol.innerText = prod.description;
+  let priceCol = document.createElement("td");
+  priceCol.setAttribute("class", "cols");
+  priceCol.innerText = dollars;
+  row.appendChild(nameCol);
+  row.appendChild(descCol);
+  row.appendChild(priceCol);
+
   prods.appendChild(row);
 }
 
 function filterCat(currentCategory) {
   displayHeading(currentCategory);
   let filteredeCategory = products.filter((prod) => {
-    return prod.categories.find((categ) => {
-      return categ === currentCategory;
-    });
+    return (
+      prod.categories.find((categ) => {
+        return categ === currentCategory;
+      }) && prod.discontinued === false
+    );
   });
   filteredeCategory.forEach((prod) => {
     CreateRow(prod);
   });
+  consoleItem();
 }
 
 function displayHeading(currentCategory) {

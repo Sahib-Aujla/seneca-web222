@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <div>
+            First Name: <input type="text" name="name" id="name" placeholder="first Name" >
+
+        </div>
+
+        <div>
+            <label for="id1">Last Name</label>
+            <input type="text" name="lastName" id="id1">
+        </div>
+        <div>
+            <label for="passwd">Password</label>
+            <input type="password" name="passwd" id="passwd" minlength="8" maxlength="14">
+        </div>
+        <div>
+            <label for="file">choose file</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <input type="radio" name="gender" value="male" id=""> male 
+            <input type="radio" name="gender" id=""> female 
+        
+        </div>
+        <div>
+            <input type="checkbox" name="hobby" id="" value="sport">
+            <input type="checkbox" name="hobby" id="" value="sport">
+
+        </div>
+        <div>
+
+
+            <input type="submit" value="Submit now!!">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Form validation example</title>
+</head>
+<body>
+   <h1>Jatt da form</h1>
+
+   <form name="form1" action="https://httpbin.org/get" method="get" onsubmit="return validInput()">
+<fieldset>
+    <legend>Personal info</legend>
+    <div>
+        <p id="error" style="display: none;"></p>
+
+    </div>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="id1" required placeholder="Full Name" name="name">
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <!-- <input min="1" max="150" type="number" id="id1" required placeholder="Full Name" name="age"> -->
+        <input type="text" name="age" >
+    </div>
+    <div>
+        <input type="submit" value="Register">
+    </div>
+    <div>
+        <input type="reset" value="clear" id="id2">
+    </div>
+</fieldset>
+   
+   </form>
+
+   <script>
+    function validInput() {
+        let fullName=document.getElementById('id1').value.trim();
+        let error=document.querySelector("#error");
+        let age=document.form1.age.value.trim();
+        
+        let valid=true;
+        if(fullName.length<5 || fullName.length>20) {
+          
+            error.style.display="block";
+           error.innerHTML+="Galt likh reha<br/>";
+            valid= false;
+        }
+        if(age=="" || !isFinite(age)){
+            error.style.display="block";
+
+           error.innerHTML+=" ummar Galt likh reha";
+           valid= false;
+
+        }
+
+
+        return valid;
+    }
+   </script>
+</body>
+</html>

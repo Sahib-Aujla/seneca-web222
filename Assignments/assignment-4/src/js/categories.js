@@ -10,8 +10,8 @@
 
 window.categories = [
   { id: "all", description: "All Items" },
-  { id: "c1", description: "Category 1" },
-  { id: "c2", description: "Category 2" },
-  { id: "c3", description: "Category 3" },
-  { id: "c4", description: "Category 4" }
+  { id: "and", description: "Android devices" },
+  { id: "ios", description: "ios devices" },
+  { id: "sph", description: "Smart Phones" },
+  { id: "lap", description: "Laptops" }
 ];
