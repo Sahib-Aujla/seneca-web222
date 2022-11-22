@@ -1,0 +1,41 @@
+/**
+ * Override any styles here that you want to change (optional)...
+ */
+
+body {
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+#products{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:auto;
+  /* //background-color: beige; */
+}
+
+.card{
+  padding:10px;
+  margin:20px;
+  border-radius: 10px;
+  border: 1px thin black;
+  color:rgb(74, 146, 214);
+  background-color: aliceblue;
+  box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+scale: 1.03;
+}
+
+.myImg{
+  width: 300px;
+  height:250px;
+  border-radius: 5px;
+}
