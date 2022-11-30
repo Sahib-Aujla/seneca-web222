@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color:#011f2e ;
+  
+    
+}
+
+body::before {
+   content: '';
+    position: absolute;
+    top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;;
+        /* background: linear-gradient(100deg, #3B53D6,#4AFAFA); */
+        filter: blur(10px);
+}
+
+
+#head{
+    display:flex;
+    position: sticky;
+    top:0;
+    left:0;
+    padding:20px;
+
+}
+#head h3{
+    width:15vw;
+    color:#f1faee;
+    font-size: 25px;
+}
+.nav{
+    width:85vw;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.nav ul li{
+    font-size:20px ;
+
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul li a{
+    color:#fefae0;
+    text-decoration: none;
+}
+.nav ul div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li:hover{
+    scale:1.09;
+    color:#e5e5e5;
+}
+
+.nav ul li:hover + .dot {
+   
+    background: #e5e5e5;
+     display: block; 
+    
+}
+
+.dot{
+    
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: transparent;
+    margin-top: 5px;
+    display: none;
+}
+
+
+.main{
+    
+    scroll-behavior: smooth;  
+}
+/* Home page styling */
+#home{
+    z-index: 5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    /* filter: grayscale(100%); */
+    width:100%;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.home_container>*{
+margin:10px;
+}
+.home_container>h1{
+    font-size: 40px;
+}
+
+.btn{
+width:100px;
+height: 2rem;
+border-radius: 10px;
+cursor: pointer;
+font-weight: bold;
+font-size: 15px;
+border:none;
+transition:all 0.3s ease-in-out;
+box-shadow:0 5px 8px 0 rgba(255, 255, 255, 0.599);
+
+}
+
+.resume{
+    background: transparent;
+    color:white;
+    border:2px solid white;
+}
+
+.resume:hover{
+    background-color: white;
+    color:black;
+    scale:1.03;
+
+}
+
+.contact_btn a{
+text-decoration: none;
+color:black;
+}
+.contact_btn:hover{
+    scale:1.03;
+    color:white;
+}
+
+/* about */
+
+#about{
+    width:80vw;
+    margin: auto;
+    height: 90vh;
+}

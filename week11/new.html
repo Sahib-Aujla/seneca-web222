@@ -1,0 +1,67 @@
+<!-- Name:Sahibpreet Singh
+student id: 165338211
+email:sahibpreet-singh1@myseneca.ca
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="#" name="myForm">
+        <fieldset>
+        <legend>Student Registration</legend>
+
+            <div>
+                <label for="Name">Name:</label>
+                <input required type="text" placeholder="Enter Name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input required type="email" >
+            </div>
+            <div>
+                <span>Degree Studies: </span>
+                <input type="radio" name="degree" value="full_time" checked >Full-time</input>
+                <input type="radio" name="degree" value="part_time" >Part-time</input>
+            </div>
+            <div>
+                <p>What would you like to study?</p>
+               
+                <select id="lol" multiple>
+                    <option value="Web" selected>Web</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+
+
+                </select>
+                
+            </div>
+            <div>
+                <p>Which days do you prefer?</p>
+                
+                
+                    <input type="checkbox" name="days" value="1">Monday<br />
+                    <input type="checkbox" name="days" value="2">Tuesday<br />
+                    <input type="checkbox" name="days" value="3">Wednesday<br />
+
+
+             
+            </div>
+            
+        </fieldset>
+        <span>
+            <input type="submit" value="Submit">
+        </span>
+        <span>
+            <input type="reset" value="Clear">
+        </span>
+    </form>
+</body>
+</html>

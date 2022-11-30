@@ -1,41 +1,63 @@
 /**
- * Override any styles here that you want to change (optional)...
+ * WEB222 – Assignment 05
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *
+ * Please update the following with your information:
+ *
+ *      Name:       Sahibpreet Singh
+ *      Student ID: 165338211
+ *      Date:       24 November 2022
  */
+
 
 body {
   text-align: center;
   transition: all 0.3s ease-in-out;
+  color: white;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 5%,
+    rgba(187, 193, 73, 1) 54%,
+    rgba(39, 86, 142, 1) 100%
+  );
+}
+#category-menu {
+  margin: 0 40px;
 }
 
-
-#products{
-  display:flex;
+#products {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width:100%;
-  height:auto;
-  /* //background-color: beige; */
+  width: 100%;
+  height: auto;
 }
 
-.card{
-  padding:10px;
-  margin:20px;
+.card {
+  padding: 10px;
+  margin: 20px;
   border-radius: 10px;
   border: 1px thin black;
-  color:rgb(74, 146, 214);
+  color: rgb(74, 146, 214);
   background-color: aliceblue;
-  box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.card:hover{
-scale: 1.03;
+.card:hover {
+  scale: 1.03;
 }
 
-.myImg{
+.myImg {
   width: 300px;
-  height:250px;
+  height: 250px;
   border-radius: 5px;
 }
