@@ -92,9 +92,11 @@ body::before {
 
 
 .main{
-    
-    scroll-behavior: smooth;  
+   
+    scroll-behavior: smooth; 
+   
 }
+
 /* Home page styling */
 #home{
     z-index: 5;
@@ -159,5 +161,63 @@ color:black;
 #about{
     width:80vw;
     margin: auto;
-    height: 90vh;
+    height: 97vh;
+    margin-top: 20px;
 }
+
+
+.about_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_container h1{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info{
+    margin-top: 20px;
+display :flex;
+width: 100%;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+.info p{
+color:#c1bdbd;
+font-size: 20px;
+margin-right: 30px;
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+.img_cont{
+    --angle:0deg;
+  
+    width:310px;
+    height: 310px;;
+border-radius: 10px;
+
+border: 1rem solid;
+  border-image: linear-gradient(0deg, #12c2e9, #c471ed, #f64f59) 1;
+  animation: 5s rotate linear infinite;
+}
+.img_cont img{
+border-radius: 10px;
+    display: inherit;
+    width: 300px;
+    height: 300px;;
+}
+
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
