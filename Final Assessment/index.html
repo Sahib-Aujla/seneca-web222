@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahibpreet Singh | website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <header id="head">
+<body >
+    <header id="head" >
         <h3>Sahib Aujla</h3>
         <nav class="nav">
             <ul>
@@ -27,7 +28,7 @@
 
                 </div>
                 <div>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Education">Education</a></li>
                     <div class="dot"></div>
 
                 </div>
@@ -41,27 +42,158 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <section id="home">
+    <main class="main ">
+        <section id="home" data-aos="fade-up"  data-aos-delay="150" data-aos-duration="1500">
             <div class="home_container">
                 <h1>Hey, I am Sahibpreet Singh</h1>
                 <h2>I am a Full Stack Web Developer & A Software Engineer </h2>
-                <button class="btn resume">Resume</button>
+                <button class="btn resume"><a href="./assets/Sahibpreet_singh_Resume.pdf" download>Resume</a> </button>
                 <button class="btn contact_btn"><a href="#contact">Contact Me</a></button>
+                <div class="scroll_cont">
+                    <a href="#about"><img src="./assets/scroll-down-mouse.gif" alt="gif"></a>
+                    
+                </div>
             </div>
+            
         </section>
-        <section id="about">
+        <section id="about" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
             <div class="about_container">
                 <h1>About Me</h1>
                 <div class="info">
-                    <p>I declare that my assessment is wholly my own work in accordance<br /> with Seneca Academic Policy. No part of this <br /> assessment has been copied manually or electronically <br /> from any other source (including web sites) except<br />  for the information supplied by the WEB222 <br /> instructors and / or made available in this assessment for my use.<br />  I also declare that no part of this assignment has been distributed to other students.</p>
+                    <div id="info_content fade-in-text">
+                        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this  assessment has been copied manually or electronically from any other source (including web sites) except  for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+                        <p>
+                            My name is Sahibpreet Singh and I was born in a village named Boran, district Fatehgarh Sahib, Punjab, India. After my high school education I moved to Canada for my higher studies at Seneca College.
+                        </p>
+                    </div>
                     <div class="img_cont">
                         <img src="./assets/profile_pic.jpg" alt="picture">
                     </div>
                 </div>
             </div>
         </section>
+        <section id="skills" >
+            <div class="skills_cont">
+                <h1 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">Passionate About</h1>
+                <div class="skill_cont">
+                    
+                </div>
+            </div>
+        </section>
+        <section id="Education">
+         
+
+
+<div class="Education_cont">
+<h1 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">Education</h1>
+<div class="edu_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
+        <div class="edu_name">
+        <h2>Seneca College </h2>
+        <p>(2022-2024)</p>
+    </div>
+    <div class="edu_desc">
+        <p>I started studying at Seneca College in summer 2022. It's been a good ride so far and I have been able to learn many fantastic things here which made me a better programmer for sure. Along with that interacting woth different people from all around the world gave me exposure to different cultures.</p>
+    </div>
+
+</div>
+<div class="edu_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
+    <div class="edu_name"> 
+
+        <h2>Saffron City</h2>
+        <h2>School </h2>
+
+        <p>(2006-2021)</p>
+    </div>
+    <div class="edu_desc">
+        <p>I spent 15 years of my life at this school and I must say it was a journey filled with emotion predominantly laughter, boredom and much more. Always having fun with friends, full of dreams and passion. Always looking up ahead with friends and doing mischieves all around. At the moment I should have cherished my life more...</p>
+    </div>
+
+</div>
+</div>
+        </section>
+        <section id="contact">
+            <div class="contact_cont" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
+                <h1 style="margin: 2rem;">Have a Chat With ME</h1>
+                <div class="form_cont">
+                    <form id="form" action="https://httpbin.org/post" onsubmit='return checkValidForm()' method="post">
+                        <fieldset>
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" required placeholder="Enter Your Name">
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" placeholder="Enter Your email">
+                            </div>
+                           
+                            <div class="spanDiv">
+                                <span>
+                                    <label for="street_No">Street:</label>
+                                    <input type="text" name="street_No" required placeholder="Enter Your Street">
+                                </span>
+                                <span>
+                                    <label for="City">City:</label>
+                                    <input type="text" name="City" required placeholder="Enter Your City">
+                                </span>
+
+                                
+                            </div>
+                            <div class="spanDiv">
+                                <span>
+                                    <label for="postal_Code">Postal Code:</label>
+                                    <input type="text" name="postal_Code" placeholder="Enter Your Postal Code">
+                                </span>
+                                <span>
+                                    <label for="province">Province: </label>
+                                    <input type="text" list="provinces" required autocomplete    placeholder="Enter your Province" name="province">
+                                    <datalist id="provinces">
+                                        <option value="Ontario">
+                                        <option value="Quebec">
+                                        <option value="Nova Scotia">
+                                        <option value="New Brunswick">
+                                        <option value="Manitoba">
+                                        <option value="British Columbia">
+                                        <option value="Prince Edward Island ">
+                                        <option value="Saskatchewan">
+                                        <option value="Alberta">
+                                        <option value="Newfoundland and Labrador">
+                                        <option value="Nunavut, Northwest Territories">
+                                        <option value="Yukon">
+                                      </datalist>
+                                </span>
+                            </div>
+                            <div>
+                            Your Concern: 
+                            <input type="radio" class="concern" name="concern" id="jobOffer" value="jobOffer">  Job Offer </input>
+                            <input type="radio" class="concern" name="concern" id="School" value="School">  School </input>
+                            <input type="radio" class="concern" name="concern" id="other" value="Other">  Other</input>
+
+                            </div>
+                            <div id="otherBox">
+                                <label for="OtherBusiness">Other: </label>
+                            <input type="text" name="OtherBusiness"  placeholder="Enter your concern">
+
+                            </div>
+                            <div class="textDiv">
+                                <label for="message">Message:</label>
+                                <textarea placeholder="Enter a message for me" name="message"></textarea>
+                            </div>
+                            <div class="btn_cont">
+                                <button class="btn" type="submit">Submit</button>
+                                <button class="btn" type="reset">Clear Form</button>
+                            </div>
+                            
+                        </fieldset>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
